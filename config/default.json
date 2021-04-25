@@ -1,0 +1,9 @@
+ {
+   "port": 5000,
+   "jwtSecret": "ingvar volkov",
+   "mongoUri": "mongodb+srv://ingvar:1234567812345678@cluster0.o1uup.mongodb.net/appMern?retryWrites=true&w=majority"
+ }
+
+
+
+    
