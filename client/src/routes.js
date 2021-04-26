@@ -1,5 +1,6 @@
 import React from 'react';
 import { Switch, Route, Redirect } from 'react-router-dom'
+import { AuthPage } from './pages/AuthPage';
 import { CreatePage } from './pages/CreatePaje';
 import { DetailPage } from './pages/DetailPage';
 import { LinksPage } from './pages/LinksPage';
@@ -25,9 +26,10 @@ export const useRoutes = isAuthenticated => {
    }
    return (
       <Switch>
-         <Route>
-            //!!!!!!!!!!!!!!!!!!!!!!!!!
+         <Route path="/" exact>
+            <AuthPage />
          </Route>
+         <Redirect to={ } />
       </Switch>
    )
 
