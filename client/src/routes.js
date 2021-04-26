@@ -9,7 +9,6 @@ import { AuthPage } from './pages/AuthPage'
 export const useRoutes = isAuthenticated => {
    if (isAuthenticated) {
       return (
-
          <Switch>
             <Route path="/links" exact>
                <LinksPage />
@@ -24,7 +23,6 @@ export const useRoutes = isAuthenticated => {
          </Switch>
       )
    }
-
    return (
       <Switch>
          <Route path="/" exact>
